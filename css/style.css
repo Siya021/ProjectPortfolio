@@ -1,0 +1,101 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Rowdies:wght@300&family=Signika+Negative:wght@300&family=Taviraj:ital,wght@1,300&display=swap');
+
+ 
+  #header{
+    background: #999993;
+    padding: 16px;
+  }
+  #header .ul{
+    justify-content: flex-end;
+  }
+  
+.nav-menu ul {
+    margin-left: 25px;
+    padding: 0;
+    list-style: none;
+}
+.nav-menu .nav-menu-list{
+     display: flex;
+     float: right;
+    gap: 40px;
+    text-align: center;
+    margin-left:100px;
+}
+.nav-menu ul li {
+    position: relative;
+    white-space: nowrap;
+    padding: 10px 0 10px 22px;
+}
+.nav-menu a{
+    display: block;
+    position: relative;
+    color:black;
+    transition: 0.3s;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 0 4px;
+    text-transform: capitalize;
+}
+.nav-menu ul li a::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -6px;
+    left: 0;
+    background-color: rgba(196,34,23,255);
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.4s ease-in-out;
+}
+.nav-menu a:hover::before,
+.nav-menu li:hover a::before,
+.nav-menu .active a::before {
+    visibility: visible;
+    width: 100%;
+}
+.dropdown .btn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: rgb(12, 12, 12);
+    padding: 10px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  .bottom-page {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#999993;
+    color: black;
+    text-align: center;
+  }
+  
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: black;
+  color:#999993;
+}
+
+.fa-instagram {
+  background: black;
+  color:#999993;
+}
+
+
+.fa-linkedin {
+  background: black;
+  color: #999993;
+}
+
+.fa-github {
+  background: black;
+  color: #999993;
+}

@@ -1,101 +1,102 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Rowdies:wght@300&family=Signika+Negative:wght@300&family=Taviraj:ital,wght@1,300&display=swap');
 
- 
-  #header{
-    background: #999993;
-    padding: 16px;
-  }
-  #header .ul{
-    justify-content: flex-end;
-  }
+body{
+  /* background-color: black; */
+} 
+.main-testimonial-container{
+  border: 5px solid red;
+  display: flex;
+}
+.tests{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slide-container{
+  max-width: 1110px;
+  width: 100%;
+  background-color: black;
+  padding: 30px;
+}
+.slide-content{
+  margin: 0 40px;
+}
+.card{
+  width: 320px;
+  border-radius: 25px;
+  background-color:white;
+}
+.image-content,
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.image-content{
+  position: inherit;
+  row-gap: 5px;
   
-.nav-menu ul {
-    margin-left: 25px;
-    padding: 0;
-    list-style: none;
 }
-.nav-menu .nav-menu-list{
-     display: flex;
-     float: right;
-    gap: 40px;
-    text-align: center;
-    margin-left:100px;
+.overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: red;
+  border-radius: 25px 25px 0 25px;
 }
-.nav-menu ul li {
-    position: relative;
-    white-space: nowrap;
-    padding: 10px 0 10px 22px;
+.overlay::before,
+.overlay::after{
+  content: '';
+  position: relative;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: black;
 }
-.nav-menu a{
-    display: block;
-    position: relative;
-    color:black;
-    transition: 0.3s;
-    font-size: 16px;
-    font-weight: 300;
-    padding: 0 4px;
-    text-transform: capitalize;
+.overlay::after{
+  border-radius: 0 25px 0 0;
+  background-color: red;
 }
-.nav-menu ul li a::before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    bottom: -6px;
-    left: 0;
-    background-color: rgba(196,34,23,255);
-    visibility: hidden;
-    width: 0px;
-    transition: all 0.4s ease-in-out;
+ .card-image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 75%;
+  background: red;
+  padding: 4px;
+ } 
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid black;
 }
-.nav-menu a:hover::before,
-.nav-menu li:hover a::before,
-.nav-menu .active a::before {
-    visibility: visible;
-    width: 100%;
+.name{
+  font-size: 18px;
+  font-weight: 500;
 }
-.dropdown .btn {
-    font-size: 16px;  
-    border: none;
-    outline: none;
-    color: rgb(12, 12, 12);
-    padding: 10px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-  }
-  .bottom-page {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color:#999993;
-    color: black;
-    text-align: center;
-  }
-  
-.fa:hover {
-    opacity: 0.7;
+.description{
+  font-size: 15px;
+  text-align: center;
 }
-
-.fa-facebook {
+.button{
+  border: none;
+  font-size: 15px;
+  color: white;
+  padding: 8px 16px;
+  background-color: red;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.4s ease-out;
+}
+.button:hover{
   background: black;
-  color:#999993;
-}
-
-.fa-instagram {
-  background: black;
-  color:#999993;
-}
-
-
-.fa-linkedin {
-  background: black;
-  color: #999993;
-}
-
-.fa-github {
-  background: black;
-  color: #999993;
 }

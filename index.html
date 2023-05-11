@@ -1,76 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="/css/style.css" />
     <title>My Portfolio</title>
-    
-</head>
-<body>
+  </head>
+  <body>
     <section class="home">
       <nav class="navbar navbar-expand-lg bg-body-primary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="/Assets/Siya's.png" alt="logo" width="100px"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand" href="#"
+            ><img src="/Assets/Siya's.png" alt="logo" width="100px"
+          /></a>
+          <button
+            class="navbar-toggler" 
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav  justify-content-end w-100">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#about"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   About
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Education</a></li>
-                  <li><a class="dropdown-item" href="#">Skills</a></li>
-                  <li><a class="dropdown-item" href="#">Work Experience</a></li>
+                  <li><a class="dropdown-item" href="#education" >Education</a></li>
+                  <li><a class="dropdown-item" href="#skills" >Skills</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Testimonials</a>
+                <a class="nav-link" href="#testimonials">Testimonials</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
+                <a class="nav-link" href="#projects" >Projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact Me</a>
+                <a class="nav-link" href="#contact">Contact Me</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <div class="heading">
-       <h1>I'm Siyamthanda <span>Mazokwana</span></h1>
-       <p>Welcome to my Portfolio website, it will tell you more about <br> my details and work experiences</p>
-       <a href="#" class="cta">DOWNLOAD CV</a>
-      </div>
     </section>
 
-    <section id="about">
-      <div class="about container">
-        <div>
-          <h1 class="section-title">About</h1>
+    <section class="landing">
+      <div class="land-container">
+        <div class="land-text">
+          <h3>Hey, there!</h3>
+          <h1>I'm <span>Siyamthanda Mazokwana</span></h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum est libero officiis minus nisi laborum ipsam voluptatibus recusandae aliquam, ad tempore id, enim nobis? Aperiam eaque et est voluptate corporis?</p>
+          <div class="wrapper">
+            <div class="icon facebook">
+               <div class="tooltip">
+                  Facebook
+               </div>
+               <span><i class="fab fa-facebook-f"></i></span>
+            </div>
+            <div class="icon twitter">
+               <div class="tooltip">
+                  Twitter
+               </div>
+               <span><i class="fab fa-twitter"></i></span>
+            </div>
+            <div class="icon instagram">
+               <div class="tooltip">
+                  Instagram
+               </div>
+               <span><i class="fab fa-instagram"></i></span>
+            </div>
+            <div class="icon github">
+               <div class="tooltip">
+                  Github
+               </div>
+               <span><i class="fab fa-github"></i></span>
+            </div>
+            <div class="icon youtube">
+               <div class="tooltip">
+                  YouTube
+               </div>
+               <span><i class="fab fa-youtube"></i></span>
+            </div>
+         </div>
         </div>
       </div>
-      
-
+        </div>
+      </div>
     </section>
 
-<!-- tests start -->
+    <section id="about" class="d-lg-flex flex-column">
+      <div class="about-container">
+        <div>
+          <h1 class="section-title text-center">About</h1>
+          <div class="container" id="about">
+      <br>
+            <img class="circle" src="/Assets/C12 Siyamthanda Mazokwana (1).JPG" alt="image" width="50px">
+            <p class="text-center">Hey I'm Siyamthanda Mazokwana! I'm currently teaching myself full-stack web development. I'm taking a break from college to pursue this venture full-time.</p>
+            <p class="text-center">I'm a 23 year old tech enthusiast who's passionate to learn more and more until there's nothing left to learn.</p>
+            <p class="text-center">
+          </div>
+          <br><br>
+          <div class="container text-center">
+            <div class="row align-items-center">
+              <div class="col">
+                
+              </div>
+              <div class="col">
+                One of three columns
+              </div>
+              <div class="col">
+                One of three columns
+              </div>
+            </div>
+          </div>
+
+          <h2 class="subsection-tittle">My Skills</h2> 
+          <p>HTML</p>
+          <div class="skills-container">
+            <div class="skills html">90%</div>
+          </div> 
+          <p>CSS</p>
+          <div class="skills-container">
+            <div class="skills css">79%</div>
+          </div>
+          <p>Javascript</p>
+          <div class="skills-container">
+            <div class="skills js">21%</div>
+          </div>
+          <p>Bootstrap</p>
+          <div class="skills-container">
+            <div class="skills btsp">69%</div>
+          </div>
+      </div>
+    </section>
+
+    <!-- tests start -->
     <section id="tests">
       <div class="testimonials container">
-        <h1 class="section-title">Testimonials</h1>
+        <h1 class="section-title text-center">Testimonials</h1>
         <br>
-        
         <div class="main-testimonial-container">
-          <div class="slide-container">
-            <div class="slide-content">
+          <div class="row">
+            <div class="col-3">
               <div class="card-wrapper">
                 <div class="card">
                   <div class="card">
@@ -84,8 +178,6 @@
                     <div class="card-content">
                       <h2 class="name">Ayabulela Sityata</h2>
                       <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur laborum cum soluta laboriosam, iure sequi tempora veniam, officia exercitationem velit quasi commodi nulla mollitia debitis? Eaque impedit distinctio omnis provident.</p>
-
-                      <button class="button">More info</button>
                     </div>
                   </div>
                 </div>
@@ -93,7 +185,7 @@
             </div>
           </div>
           <div class="slide-container">
-            <div class="slide-content">
+            <div class="col-3">
               <div class="card-wrapper">
                 <div class="card">
                   <div class="card">
@@ -107,8 +199,6 @@
                     <div class="card-content">
                       <h2 class="name">Qaqambile Mnqika</h2>
                       <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur laborum cum soluta laboriosam, iure sequi tempora veniam, officia exercitationem velit quasi commodi nulla mollitia debitis? Eaque impedit distinctio omnis provident.</p>
-
-                      <button class="button">More info</button>
                     </div>
                   </div>
                 </div>
@@ -117,7 +207,7 @@
           </div>
 
           <div class="slide-container">
-            <div class="slide-content">
+            <div class="col-4">
               <div class="card-wrapper">
                 <div class="card">
                   <div class="card">
@@ -125,14 +215,12 @@
                       <span class="overlay"></span>
 
                       <div class="card-image">
-                        <img src="/Assets/C12 Ayabulela Sityata 2.jpg" alt="" class="card-img">
+                        <img src="/Assets/C12 C2 Eighton-Lee Paulse (2).JPG" alt="" class="card-img">
                       </div>
                     </div>
                     <div class="card-content">
                       <h2 class="name">Eighton-Lee Paulse</h2>
                       <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur laborum cum soluta laboriosam, iure sequi tempora veniam, officia exercitationem velit quasi commodi nulla mollitia debitis? Eaque impedit distinctio omnis provident.</p>
-
-                      <button class="button">More info</button>
                     </div>
                   </div>
                 </div>
@@ -154,11 +242,8 @@
                     </div>
                     <div class="card-content">
                       <h2 class="name">Kqodisho Lebopa
-
                       </h2>
                       <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur laborum cum soluta laboriosam, iure sequi tempora veniam, officia exercitationem velit quasi commodi nulla mollitia debitis? Eaque impedit distinctio omnis provident.</p>
-
-                      <button class="button">More info</button>
                     </div>
                   </div>
                 </div>
@@ -171,37 +256,74 @@
     </section>
     <!-- tests finish -->
 
-
     <!-- projects -->
-   
-    <!-- projects finish -->
+    <section class="projects" id="portfolio">
+      <div class="p-text">
+        <h2><span>My</span> Projects</h2>
+      </div>
 
-
-
-
-
-    <section id="contact">
-      <div class="contact container">
-        <div>
-          <h1 class="section-title">Contact Me</h1>
+      <div class="projects-content">
+        <div class="row">
+          
         </div>
       </div>
     </section>
-    
-    <section id="footer">
-      <footer>
-        <div class="footer-container">
-            <div class="social-icons">
-            <a href="#whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="#facebook"><i class="fa-brands fa-facebook-square"></i></a>
-            <a href="#instagram"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#github"><i class="fa-brands fa-github"></i></a>
-            <a href="#linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
-            <div class="copy" style="justify-content: end;">
-            <p>Copyright &copy; 2023; Designed by S.Mazokwana</p>
-        </div>
-      </footer>
+    <!-- projects finish -->
+
+    <section id="contact">
+      <div class="contact-container">
+        <form action="https://formspree.io/f/xgebqwrz" method="post">
+          <div>
+            <h1 class="section-title">Contact Me</h1>
+            <br />
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName" />
+            </div>
+
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName" />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>   
-</body>
+    <div class="social">
+      <h6>Follow me</h6>
+      <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-slack"></i></a>
+      <a href="https://github.com/"><i class="fab fa-instagram"></i></a>
+      <p class="copyright">
+        &copy; Copyright All rights reserved. <br />
+        Siyamthanda Mazokwana
+      </p>
+      <p></p>
+    </div>
+
+    <section id="footer"></section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

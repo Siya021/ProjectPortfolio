@@ -1,329 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <link rel="stylesheet" href="/css/style.css" />
-    <title>My Portfolio</title>
-  </head>
-  <body>
-    <section class="home">
-      <nav class="navbar navbar-expand-lg bg-body-primary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"
-            ><img src="/Assets/Siya's.png" alt="logo" width="100px"
-          /></a>
-          <button
-            class="navbar-toggler" 
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav  justify-content-end w-100">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#home">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#about"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  About
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#education" >Education</a></li>
-                  <li><a class="dropdown-item" href="#skills" >Skills</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#testimonials">Testimonials</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#projects" >Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact Me</a>
-              </li>
-            </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>My Portfolio</title>
+  <link rel="shortcut icon" href="./Assets/Siya_s.ico">
+</head>
+
+<body>
+  <section class="home">
+    <nav class="navbar navbar-expand-lg bg-body-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="/Assets/Siya's.png" alt="logo" width="100px" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav  justify-content-end w-100">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#about" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                About
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#education">Education</a></li>
+                <li><a class="dropdown-item" href="#skills">Skills</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <section class="landing">
+    <div class="land-container">
+      <div class="land-text">
+        <h3>Hey, there!</h3>
+        <div data-aos="fade-left"><h1>I'm <span class="thanda">Siyamthanda Mazokwana</span></h1></div>
+        
+        <h2>I am an <span>aspiring FrontEnd Developer</span></h2> 
+
+        <div class="wrapper">
+          <div class="icon facebook">
+            <div class="tooltip">
+              Facebook 
+            </div>
+            <span><i class="fab fa-facebook-f"></i></span>
+          </div>
+          <div class="icon instagram">
+            <div class="tooltip">
+              Instagram
+            </div>
+            <span ><a href="https://www.instagram.com/"style="color:danger;"><i class="fab fa-instagram"></i></a></span>
+          </div>
+          <div class="icon github">
+            <div class="tooltip">
+              Github
+            </div>
+            <span><a href=""></a><i class="fab fa-github"></i></span>
           </div>
         </div>
-      </nav>
-    </section>
-
-    <section class="landing">
-      <div class="land-container">
-        <div class="land-text">
-          <h3>Hey, there!</h3>
-          <h1>I'm <span>Siyamthanda Mazokwana</span></h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum est libero officiis minus nisi laborum ipsam voluptatibus recusandae aliquam, ad tempore id, enim nobis? Aperiam eaque et est voluptate corporis?</p>
-          <div class="wrapper">
-            <div class="icon facebook">
-               <div class="tooltip">
-                  Facebook
-               </div>
-               <span><i class="fab fa-facebook-f"></i></span>
-            </div>
-            <div class="icon twitter">
-               <div class="tooltip">
-                  Twitter
-               </div>
-               <span><i class="fab fa-twitter"></i></span>
-            </div>
-            <div class="icon instagram">
-               <div class="tooltip">
-                  Instagram
-               </div>
-               <span><i class="fab fa-instagram"></i></span>
-            </div>
-            <div class="icon github">
-               <div class="tooltip">
-                  Github
-               </div>
-               <span><i class="fab fa-github"></i></span>
-            </div>
-            <div class="icon youtube">
-               <div class="tooltip">
-                  YouTube
-               </div>
-               <span><i class="fab fa-youtube"></i></span>
-            </div>
-         </div>
-        </div>
       </div>
-        </div>
-      </div>
-    </section>
+    </div>
+    </div>
+    </div>
+  </section>
 
-    <section id="about" class="d-lg-flex flex-column">
-      <div class="about-container">
-        <div>
+  <section id="about" class="d-lg-flex flex-column">
+    
+    <div class="about-container">
+      <div class="row">
+        <div class="col">
           <h1 class="section-title text-center">About</h1>
-          <div class="container" id="about">
-      <br>
-            <img class="circle" src="/Assets/C12 Siyamthanda Mazokwana (1).JPG" alt="image" width="50px">
-            <p class="text-center">Hey I'm Siyamthanda Mazokwana! I'm currently teaching myself full-stack web development. I'm taking a break from college to pursue this venture full-time.</p>
-            <p class="text-center">I'm a 23 year old tech enthusiast who's passionate to learn more and more until there's nothing left to learn.</p>
-            <p class="text-center">
-          </div>
-          <br><br>
-          <div class="container text-center">
-            <div class="row align-items-center">
-              <div class="col">
-                
+        </div>
+      </div>
+      <div class="img-fluid">
+        <img class="circle" src="/Assets/C12 Siyamthanda Mazokwana (1).JPG" alt="image" width="50px">
+       </div>
+       <p class="text-center">Hey I'm Siyamthanda Mazokwana! I'm currently teaching myself full-stack web
+        development. I'm taking a break from college to pursue this venture full-time.</p>
+    </div>
+          <p class="text-center">I'm a 23 year old tech enthusiast who's passionate to learn more, from the streets of Phillipi, in the Cape Flats</p>
+
+        <div class="row justify-content-center">
+           <div class="col-4">
+             <h4>My <span>Details</span></h4>
+             <h6>First Name :</h6><p><span>Siyamthanda</span></p>
+             <hr>
+             <h6>Last Name</h6>
+             <p><span>Mazokwana</span></p>
+             <hr>
+             <h6>Date of Birth</h6>
+               <p><span>1999/06/09</span></p>
+               <hr>
+             <h4>My <span>Contact</span></h4>
+             <p><i class="fa-regular fa-calendar-days"></i></i></p>
+             <p><i class="fas fa-home me-3 text-secondary"></i> 10721 Dubu Crescent, Phillipi,Cape Town 7750, South Africa</p>
+               <p>
+              <i class="fas fa-envelope me-3 text-secondary"></i>
+              siyamthandamazokwana@gmail.com
+               </p>
+             <p><i class="fas fa-phone me-3 text-secondary"></i> + 27 73 238 1790</p>
+             <h4>My <span>Interests</span></h4>
+             <p>Photography</p>
+             <p>Gaming</p>
+             <p>Music</p>
+           </div>
+
+            <div class="col-4">
+              <div class="container my-5">
+                <div class="col-md-6 offset-md-3">
+                <h4 style="margin-left: 1.2rem;">Education & <span>Work</span></h4>
+                <ul class="timeline-3">
+                  <li>
+                    <p class="mt-2">Started at <span>Life Choices Academy</span>.</p>
+                    <h4>03 April 2023</h4>
+                  </li>
+                  <li>
+                    <h5>10 Nov 2022 - 12 Feb 2023</h5>
+                    <p class="mt-3">Worked as a Warehouse general assitant at <span>AdcorpBlu</span>.</p>
+                  </li>
+                  <li>
+                    <h6>Nov 2018</h6>
+                    <p class0="mt-2">
+                      Matriculated at <span>Phakama Secondary School</span>.
+                    </p>
+                  </li>
+                </ul>
               </div>
-              <div class="col">
-                One of three columns
-              </div>
-              <div class="col">
-                One of three columns
-              </div>
+             </div>
             </div>
           </div>
+      </div>
+      <hr>
 
-          <h2 class="subsection-tittle">My Skills</h2> 
+
+      <div class="row">
+        <div class="col">
+          <h2 class="subsection-tittle text-center">My<span>Skills</span></h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
           <p>HTML</p>
           <div class="skills-container">
             <div class="skills html">90%</div>
-          </div> 
+          </div>
+        </div>
+        <div class="col">
           <p>CSS</p>
           <div class="skills-container">
             <div class="skills css">79%</div>
           </div>
+        </div>
+        <div class="col">
           <p>Javascript</p>
           <div class="skills-container">
             <div class="skills js">21%</div>
           </div>
+        </div>
+        <div class="col">
           <p>Bootstrap</p>
           <div class="skills-container">
             <div class="skills btsp">69%</div>
           </div>
-      </div>
-    </section>
-
-    <!-- tests start -->
-    <section id="tests">
-      <div class="testimonials container">
-        <h1 class="section-title text-center">Testimonials</h1>
-        <br>
-        <div class="main-testimonial-container">
-          <div class="row">
-            <div class="col-3">
-              <div class="card-wrapper">
-                <div class="card">
-                  <div class="card">
-                    <div class="image-content">
-                      <span class="overlay"></span>
-
-                      <div class="card-image">
-                        <img src="/Assets/C12 Ayabulela Sityata 2.jpg" alt="" class="card-img">
-                      </div>
-                    </div>
-                    <div class="card-content">
-                      <h2 class="name">Ayabulela Sityata</h2>
-                      <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur laborum cum soluta laboriosam, iure sequi tempora veniam, officia exercitationem velit quasi commodi nulla mollitia debitis? Eaque impedit distinctio omnis provident.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="slide-container">
-            <div class="col-3">
-              <div class="card-wrapper">
-                <div class="card">
-                  <div class="card">
-                    <div class="image-content">
-                      <span class="overlay"></span>
-
-                      <div class="card-image">
-                        <img src="/Assets/C12 Qaqambile Mnqika (2).png" alt="" class="card-img">
-                      </div>
-                    </div>
-                    <div class="card-content">
-                      <h2 class="name">Qaqambile Mnqika</h2>
-                      <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur laborum cum soluta laboriosam, iure sequi tempora veniam, officia exercitationem velit quasi commodi nulla mollitia debitis? Eaque impedit distinctio omnis provident.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="slide-container">
-            <div class="col-4">
-              <div class="card-wrapper">
-                <div class="card">
-                  <div class="card">
-                    <div class="image-content">
-                      <span class="overlay"></span>
-
-                      <div class="card-image">
-                        <img src="/Assets/C12 C2 Eighton-Lee Paulse (2).JPG" alt="" class="card-img">
-                      </div>
-                    </div>
-                    <div class="card-content">
-                      <h2 class="name">Eighton-Lee Paulse</h2>
-                      <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur laborum cum soluta laboriosam, iure sequi tempora veniam, officia exercitationem velit quasi commodi nulla mollitia debitis? Eaque impedit distinctio omnis provident.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="slide-container">
-            <div class="slide-content">
-              <div class="card-wrapper">
-                <div class="card">
-                  <div class="card">
-                    <div class="image-content">
-                      <span class="overlay"></span>
-
-                      <div class="card-image">
-                        <img src="/Assets/kgodishoface.jpg" alt="" class="card-img">
-                      </div>
-                    </div>
-                    <div class="card-content">
-                      <h2 class="name">Kqodisho Lebopa
-                      </h2>
-                      <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur laborum cum soluta laboriosam, iure sequi tempora veniam, officia exercitationem velit quasi commodi nulla mollitia debitis? Eaque impedit distinctio omnis provident.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
-    </section>
-    <!-- tests finish -->
-
-    <!-- projects -->
-    <section class="projects" id="portfolio">
-      <div class="p-text">
-        <h2><span>My</span> Projects</h2>
       </div>
+      <hr>
+  </section>
 
-      <div class="projects-content">
-        <div class="row">
-          
-        </div>
-      </div>
-    </section>
-    <!-- projects finish -->
 
-    <section id="contact">
-      <div class="contact-container">
-        <form action="https://formspree.io/f/xgebqwrz" method="post">
-          <div>
-            <h1 class="section-title">Contact Me</h1>
-            <br />
-            <div class="form-group">
-              <label for="firstName">First Name</label>
-              <input type="text" id="firstName" name="firstName" />
+  <!-- tests start -->
+  <section id="tests">
+    <h1 class="section-title text-center"><span>T</span>estimonials</h1>
+    <div class="testimonials ">
+      <div class="main-testimonial-container container">
+        
+        <div class="row d-block d-md-flex m-auto">
+          <div class="card">
+            <div class="card">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="/Assets/C12 Ayabulela Sityata 2.jpg" alt="" class="card-img">
+                </div>
+              </div>
+              <div class="card-content">
+                <h2 class="name">Ayabulela Sityata</h2>
+                <p class="description">Siya is such a focused individual, very helpful and mindful. Has a great personality, he is very bubbly</p>
+              </div>
             </div>
-
-            <div class="form-group">
-              <label for="lastName">Last Name</label>
-              <input type="text" id="lastName" name="lastName" />
-            </div>
-
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="text" id="email" name="email" />
-            </div>
-
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea
-                name="message"
-                id="message"
-                cols="30"
-                rows="10"
-              ></textarea>
-            </div>
-
-            <button type="submit">Submit</button>
           </div>
-        </form>
-      </div>
-    </section>
-    <div class="social">
-      <h6>Follow me</h6>
-      <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
-      <a href="#"><i class="fab fa-github"></i></a>
-      <a href="#"><i class="fab fa-slack"></i></a>
-      <a href="https://github.com/"><i class="fab fa-instagram"></i></a>
-      <p class="copyright">
-        &copy; Copyright All rights reserved. <br />
-        Siyamthanda Mazokwana
-      </p>
-      <p></p>
+          <!--  -->
+          <div class="card">
+            <div class="card">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="/Assets/C12 Qaqambile Mnqika (2).png" alt="" class="card-img">
+                </div>
+              </div>
+              <div class="card-content">
+                <h2 class="name">Qaqambile Mnqika</h2>
+                <p class="description">It's always a pleasure to work with Siyamthanda. He has an infectious personality and he always brings out the best in others. He motivates everyone around him and he's always ready to offer a helping hand to anybody when needed. He has a go getter mindset that he applies himself to and does his best to achieve what he wants. I would definitely recommend him.</p>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="card">
+            <div class="card">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="/Assets/C12 C2 Eighton-Lee Paulse (2).JPG" alt="" class="card-img">
+                </div>
+              </div>
+              <div class="card-content">
+                <h2 class="name">Eighton-Lee Paulse</h2>
+                <p class="description"> Siyamthanda is always pantcual and is respectful. When it comes to the work he always makes sure that everything is done and goes the extra mile.</p>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="card">
+            <div class="card">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="/Assets/kgodishoface.jpg" alt="" class="card-img">
+                </div>
+              </div>
+              <div class="card-content">
+                <h2 class="name">Kqodisho Lebopa
+                </h2>
+                <p class="description">Mr Mazokwana is a supportive colleague he always gives his all to projects. He
+                  shows so much dedication</p>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
 
-    <section id="footer"></section>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    </div>
+    </div>
+  </section>
+  <!-- tests finish -->
+
+  <!-- projects -->
+  <section class="projects" id="projects">
+    <h1 class="section-tittle"><span>P</span>rojects</h1>
+    <div class="main-projects-container">
+      <div class="row">
+        <div class="col-4">
+      <div class="card" style="width: 18rem;">
+        <img src="/Assets/calender.jpg" class="img-fluid" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Bootstrap Calender</h5>
+        </div>
+        <div class="card-body">
+          <a href="https://github.com/Siya021/BootstrapCalender.git" class="card-link">Github</a>
+          <a href="https://leafy-blancmange-f23411.netlify.app/" class="card-link">Netlify</a>
+        </div>
+      </div>
+      </div>
+      <div class="col-4">
+      <div class="card" style="width: 18rem;">
+        <img src="/Assets/portfolio 1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Project Portfolio</h5>
+        </div>
+        <div class="card-body">
+          <a href="#" class="card-link">Github</a>
+          <a href="#" class="card-link">Netlify</a>
+        </div>
+      </div>
+      </div>
+      <div class="col-4">
+      <div class="card" style="width: 18rem;">
+        <img src="/Assets/portfolio2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Portfolio</h5>
+        </div>
+        <div class="card-body">
+          <a href="#" class="card-link">Github</a>
+          <a href="#" class="card-link">Netlify</a>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+  </section>
+  <!-- projects finish -->
+
+  <section id="contact">
+    <div class="contact-container">
+      <form action="https://formspree.io/f/xgebqwrz" method="post">
+        <div>
+          <h1 class="section-title">Contact Me</h1>
+          <br />
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" />
+          </div>
+
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+      
+    </div>
+    <br>
+  </section>
+  <div class="footer">
+  &copy; Copyright All rights reserved. <br />
+  Siyamthanda Mazokwana
+  </p>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  </div>
+</body>
+
 </html>
